@@ -1,0 +1,94 @@
+@import "utilities";
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  min-height: 70vh;
+  width: 40rem;
+  box-shadow: 0 20px 20px rgba($color: #000000, $alpha: 0.4),
+    0 0 50px rgba($color: #000000, $alpha: 0.3);
+  border-radius: 30px;
+  padding: 0 5rem;
+  transform-style: preserve-3d;
+}
+
+.shoe {
+  min-height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    z-index: 2;
+    width: 20rem;
+    transition: all 0.75s ease-out;
+  }
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(
+    53deg,
+    rgba(194, 182, 15, 1) 35%,
+    rgba(35, 29, 29, 1) 81%
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info {
+  h1 {
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+  }
+  h3 {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    color: gray;
+    font-weight: 300;
+    transition: all 0.75s ease-out;
+  }
+}
+
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+  button {
+    padding: 1rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: gray;
+    &.active {
+      background-color: gray;
+      color: white;
+    }
+  }
+}
+
+.purshase {
+  margin-top: 5rem;
+  button {
+    width: 100%;
+    padding: 1rem 0;
+    background: rgba(194, 182, 15, 1);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: all 0.75s ease-out;
+  }
+}
